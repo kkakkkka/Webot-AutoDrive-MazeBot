@@ -8,3 +8,16 @@ Webot-MazeSolver is an open-source project that focuses on developing an autonom
 - Path planning using the PRM algorithm
 - Point-to-point path following based on geometric tracking
 - Import and display of maze maps
+
+## Demo
+
+- World 1
+
+  
+
+- World 2
+
+  
+
+- World 3
+
