@@ -1,0 +1,245 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation 0 1 0 0
+  position 0.003073753747162372 8.122800430422453e-05 10.43092389728106
+  followType "None"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  rotation 1 0 0 1.57
+  floorSize 5 5
+  wallHeight 0.5
+}
+Wall {
+  translation 0.75 1 0
+  rotation 1.6952594753969508e-09 0.707104781184338 0.7071087811831002 -3.1415853071795863
+  name "wall1"
+  size 3.5 0.5 0.1
+}
+Wall {
+  translation -0.75 -1 0
+  rotation 1 0 0 1.5708
+  name "wall2"
+  size 3.5 0.5 0.1
+}
+Robot {
+  translation 2.14341 2.14683 0.0341761
+  rotation 0.0025104974246988906 8.767673617701048e-05 0.9999968448527576 3.1369301198799
+  scale 1.3 1.3 1.3
+  children [
+    Transform {
+      translation 0.15 1.52942e-07 0.01
+      rotation 0 0 1 -1.5707953071795862
+      children [
+        Shape {
+          appearance PBRAppearance {
+          }
+          geometry Cone {
+            bottomRadius 0.05
+            height 0.1
+          }
+        }
+      ]
+    }
+    Transform {
+      translation -0.15 -2.06014e-07 0.01
+      rotation 0 0 1 1.5708
+      children [
+        Shape {
+          appearance PBRAppearance {
+          }
+          geometry Cone {
+            bottomRadius 0.05
+            height 0.1
+          }
+        }
+      ]
+    }
+    GPS {
+      translation 0.08 0 0.04
+      children [
+        Shape {
+          appearance DryMud {
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "front_gps"
+    }
+    GPS {
+      translation -0.08 0 0.04
+      children [
+        Shape {
+          appearance DryMud {
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "back_gps"
+    }
+    GPS {
+      translation 0 0 0.04
+      scale 0.1 0.1 0.1
+      children [
+        Shape {
+          appearance Appearance {
+          }
+          geometry Box {
+            size 0.1 0.1 0.1
+          }
+        }
+      ]
+      name "car_gps"
+    }
+    Lidar {
+      translation 8.36469e-08 -2.56852e-07 0.11
+      rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0943999999999994
+      fieldOfView 3.14
+      numberOfLayers 1
+      maxRange 5
+      type "rotating"
+    }
+    InertialUnit {
+      rotation 0 0 1 1.5708
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 44.78737519903293
+        axis 0 1 0
+        anchor 0.06 0.07 0
+      }
+      device [
+        RotationalMotor {
+          name "motor1"
+          maxVelocity 50
+        }
+      ]
+      endPoint Solid {
+        translation 0.06381315470137154 0.07102395386967399 0.002005354521858011
+        rotation 0.006667763680317936 -0.9996136359939078 -0.026983692529800447 3.022054263594924
+        children [
+          DEF WHEEL Shape {
+            geometry Cylinder {
+              height 0.03
+              radius 0.04
+            }
+          }
+        ]
+        boundingObject USE WHEEL
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 44.78737401353289
+        axis 0 1 0
+        anchor -0.06 0.07 0
+      }
+      device [
+        RotationalMotor {
+          name "motor2"
+          maxVelocity 50
+        }
+      ]
+      endPoint Solid {
+        translation -0.06262650465682688 0.07161022118369735 -0.0018956651476920668
+        rotation 0.006666767334483905 -0.9996136193594058 -0.026984554924927504 3.0220419109796732
+        children [
+          Shape {
+            geometry Cylinder {
+              height 0.03
+              radius 0.04
+            }
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE WHEEL
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 33.59613508057187
+        axis 0 1 0
+        anchor 0.06 -0.07 0
+      }
+      device [
+        RotationalMotor {
+          name "motor3"
+          maxVelocity 50
+        }
+      ]
+      endPoint Solid {
+        translation 0.05773510251702725 -0.07146749302358128 -0.0009273633991888411
+        rotation 0.0310654631398281 0.9991655308809052 -0.02651752061160501 4.261625675466927
+        children [
+          Shape {
+            geometry Cylinder {
+              height 0.03
+              radius 0.04
+            }
+          }
+        ]
+        name "solid(2)"
+        boundingObject USE WHEEL
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 33.59613257123246
+        axis 0 1 0
+        anchor -0.06 -0.07 0
+      }
+      device [
+        RotationalMotor {
+          name "motor4"
+          maxVelocity 50
+        }
+      ]
+      endPoint Solid {
+        translation -0.05764075981795805 -0.07138018722441944 0.00027457434016118663
+        rotation 0.031065217586554703 0.999165515906566 -0.026518372489010098 4.261634996902915
+        children [
+          Shape {
+            geometry Cylinder {
+              height 0.03
+              radius 0.04
+            }
+          }
+        ]
+        name "solid(3)"
+        boundingObject USE WHEEL
+        physics Physics {
+        }
+      }
+    }
+    DEF BODY Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.2 0.1 0.05
+      }
+    }
+  ]
+  name "robot(1)"
+  boundingObject USE BODY
+  physics Physics {
+    density -1
+    mass 10
+  }
+  controller "controller1"
+}
