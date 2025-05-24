@@ -14,13 +14,13 @@ Webot-MazeSolver is an open-source project that focuses on developing an autonom
 
 - World 1
   
-  https://github.com/kkakkkka/Webot-AutoDrive-MazeBot/blob/main/assets/world1.mp4
+  https://github.com/user-attachments/assets/f4580cef-3c2e-4449-9e43-813287f2f6a0
 
 - World 2
   
-  https://github.com/kkakkkka/Webot-AutoDrive-MazeBot/blob/main/assets/world2.mp4
+  https://github.com/user-attachments/assets/6741d2ff-b007-4d57-bee7-4fe8420b9b5d
 
 - World 3
   
-  https://github.com/kkakkkka/Webot-AutoDrive-MazeBot/blob/main/assets/world3.mp4
+  https://github.com/user-attachments/assets/f6e05076-f834-4dd3-adf3-aaf662cf6ce0
 
