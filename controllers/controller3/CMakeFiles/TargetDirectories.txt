@@ -1,0 +1,3 @@
+C:/Users/xu/Desktop/vsc_file/robotf/FinalProject/test/mapping/controllers/controller3/CMakeFiles/controller3.dir
+C:/Users/xu/Desktop/vsc_file/robotf/FinalProject/test/mapping/controllers/controller3/CMakeFiles/edit_cache.dir
+C:/Users/xu/Desktop/vsc_file/robotf/FinalProject/test/mapping/controllers/controller3/CMakeFiles/rebuild_cache.dir
